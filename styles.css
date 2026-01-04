@@ -990,6 +990,24 @@ ul {
     }
 }
 
+/* Stack text above image + cards on smaller desktop */
+@media (max-width: 1200px) {
+    .robot-hero-row {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+    
+    .robot-hero-text {
+        order: 1;
+        padding: var(--space-2xl) var(--space-xl);
+    }
+    
+    .robot-hero-image {
+        order: 2;
+        min-height: 60vh;
+    }
+}
+
 /* Logo in image */
 .robot-image-logo {
     position: absolute;
