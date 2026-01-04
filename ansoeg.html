@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansøg som Testvirksomhed | Nordic Floor Robot</title>
+    <link rel="stylesheet" href="styles.css?v=7">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-application">
+    <!-- Navigation -->
+    <nav class="navbar navbar-light">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="Icons/Nordic-floor-logo-dark.svg" alt="Nordic Floor">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#technology">Robotten</a></li>
+                <li><a href="index.html#testprogram">Testprogram</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Application Section -->
+    <section class="application-page">
+        <div class="container">
+            <div class="application-layout">
+                <!-- Left: Timeline & Info -->
+                <div class="application-info">
+                    <a href="index.html" class="back-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7"/>
+                        </svg>
+                        Tilbage til forsiden
+                    </a>
+                    
+                    <div class="application-intro">
+                        <span class="section-label">2026 Testprogram</span>
+                        <h1>Bliv testvirksomhed</h1>
+                        <p>Vi søger et begrænset antal virksomheder til at afprøve Nordic Floor Robot i virkelige projekter. Som testvirksomhed får du tidlig adgang og direkte indflydelse på produktets udvikling.</p>
+                    </div>
+
+                    <div class="phases-section">
+                        <h3>Testforløbet</h3>
+                        <div class="phases-timeline">
+                            <div class="phase-item">
+                                <div class="phase-marker">
+                                    <span class="phase-number">01</span>
+                                    <div class="phase-line"></div>
+                                </div>
+                                <div class="phase-content">
+                                    <span class="phase-period">Q1 2026</span>
+                                    <h4>Udvælgelse & Onboarding</h4>
+                                    <p>Vi gennemgår alle ansøgninger og udvælger virksomheder baseret på projekttyper, lokation og kapacitet. Udvalgte virksomheder får en grundig introduktion til robotten.</p>
+                                </div>
+                            </div>
+                            <div class="phase-item">
+                                <div class="phase-marker">
+                                    <span class="phase-number">02</span>
+                                    <div class="phase-line"></div>
+                                </div>
+                                <div class="phase-content">
+                                    <span class="phase-period">Q2–Q3 2026</span>
+                                    <h4>Aktiv Testfase</h4>
+                                    <p>Robotten implementeres i jeres projekter. Vores team er tilgængelige for support, og vi indsamler løbende data om ydeevne og brugervenlighed.</p>
+                                </div>
+                            </div>
+                            <div class="phase-item">
+                                <div class="phase-marker">
+                                    <span class="phase-number">03</span>
+                                </div>
+                                <div class="phase-content">
+                                    <span class="phase-period">Q4 2026</span>
+                                    <h4>Evaluering & Iteration</h4>
+                                    <p>Baseret på jeres feedback optimerer vi produktet. Testvirksomheder får fortrinsret til den færdige robot og særlige samarbejdsvilkår.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="benefits-section">
+                        <h3>Fordele ved at deltage</h3>
+                        <ul class="benefits-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5"/>
+                                </svg>
+                                Gratis adgang til robotten i testperioden
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5"/>
+                                </svg>
+                                Direkte indflydelse på produktudviklingen
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5"/>
+                                </svg>
+                                Dedikeret support fra vores team
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5"/>
+                                </svg>
+                                Fortrinsret til køb ved lancering
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right: Application Form -->
+                <div class="application-form-wrapper">
+                    <div class="application-card">
+                        <h2>Ansøg som Testvirksomhed</h2>
+                        <form class="application-form" action="#" method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Navn</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="company">Virksomhed</label>
+                                    <input type="text" id="company" name="company" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Telefonnummer</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="motivation">Kort motivation</label>
+                                <textarea id="motivation" name="motivation" rows="5" placeholder="Fortæl os hvorfor I vil være testvirksomhed..." required></textarea>
+                            </div>
+                            <div class="form-notice">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                                <span>Alle henvendelser behandles fortroligt.</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Indsend Ansøgning</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="Icons/Nordic-floor-logo.svg" alt="Nordic Floor" class="footer-logo">
+                    <p>Autonom præcision for den moderne håndværker.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Produkt</h4>
+                        <ul>
+                            <li><a href="index.html#technology">Robotten</a></li>
+                            <li><a href="index.html#testprogram">Testprogram</a></li>
+                            <li><a href="#">Dokumentation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Virksomhed</h4>
+                        <ul>
+                            <li><a href="index.html#testprogram">Testprogram</a></li>
+                            <li><a href="index.html#contact">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nordic Floor. Alle rettigheder forbeholdes.</p>
+                <div class="footer-legal">
+                    <a href="#">Privatliv</a>
+                    <a href="#">Vilkår</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
