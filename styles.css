@@ -2465,54 +2465,18 @@ img[src] {
     }
     
     .robot-hero-image {
-        order: 2; /* Image below text on mobile */
-        min-height: 70vh;
+        order: 2;
+        min-height: 50vh;
         position: relative;
     }
     
-    /* Glass cards: 2 top, 2 bottom using CSS Grid */
+    /* Hide glass cards overlay on mobile - cleaner look */
     .feature-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 1fr auto;
-        gap: var(--space-xs);
-        padding: var(--space-md);
-        align-content: space-between;
-    }
-    
-    .feature-card-mini {
-        padding: var(--space-sm);
-    }
-    
-    /* First row - cards 1 & 2 at top */
-    .feature-card-mini:nth-child(1),
-    .feature-card-mini:nth-child(2) {
-        grid-row: 1;
-    }
-    
-    /* Second row - cards 3 & 4 at bottom */
-    .feature-card-mini:nth-child(3),
-    .feature-card-mini:nth-child(4) {
-        grid-row: 3;
-    }
-    
-    .feature-card-mini h4 {
-        font-size: 0.6875rem;
-        margin-bottom: 0.25rem;
-    }
-    
-    .feature-card-mini p {
-        font-size: 0.5625rem;
-        line-height: 1.4;
+        display: none;
     }
     
     .robot-image-logo {
-        display: none; /* Hide logo on mobile to reduce clutter */
+        display: none;
     }
     
     /* About company section mobile */
