@@ -560,7 +560,7 @@ ul {
 
 .testprogram-row {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: 1fr 1fr; /* Ensure equal halves */
     min-height: 80vh;
 }
 
