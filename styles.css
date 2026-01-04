@@ -967,6 +967,24 @@ ul {
     line-height: 1.5;
 }
 
+@media (max-width: 1400px) {
+    .feature-overlay {
+        grid-template-columns: repeat(2, 1fr);
+        top: var(--space-md);
+        left: var(--space-md);
+        right: var(--space-md);
+        gap: var(--space-md);
+    }
+    
+    .feature-card-mini {
+        padding: var(--space-md);
+    }
+    
+    .robot-hero-image {
+        min-height: 60vh;
+    }
+}
+
 /* Logo in image */
 .robot-image-logo {
     position: absolute;
