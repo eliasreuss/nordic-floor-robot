@@ -1012,8 +1012,15 @@ ul {
     }
 }
 
-/* Stack text above image + cards on laptops (≤1700) so MacBook Air is two rows */
-@media (max-width: 1700px) {
+/* Default desktop: two columns (text + image) */
+.robot-hero-row {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    min-height: 80vh;
+}
+
+/* Mid desktop: stack when really tight (≤1200) */
+@media (max-width: 1200px) {
     .robot-hero-row {
         grid-template-columns: 1fr;
         min-height: auto;
