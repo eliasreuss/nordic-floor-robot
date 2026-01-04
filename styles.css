@@ -2451,7 +2451,7 @@ img[src] {
     
     .robot-hero-text {
         padding: var(--space-xl) var(--space-lg);
-        order: 2;
+        order: 1; /* Text above image on mobile */
     }
     
     .robot-hero-text h2 {
@@ -2465,20 +2465,40 @@ img[src] {
     }
     
     .robot-hero-image {
-        order: 1;
-        min-height: 50vh;
+        order: 2; /* Image below text on mobile */
+        min-height: 70vh;
+        position: relative;
     }
     
+    /* Glass cards: 2 top, 2 bottom using CSS Grid */
     .feature-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: grid;
         grid-template-columns: 1fr 1fr;
-        top: var(--space-md);
-        left: var(--space-md);
-        right: var(--space-md);
+        grid-template-rows: auto 1fr auto;
         gap: var(--space-xs);
+        padding: var(--space-md);
+        align-content: space-between;
     }
     
     .feature-card-mini {
         padding: var(--space-sm);
+    }
+    
+    /* First row - cards 1 & 2 at top */
+    .feature-card-mini:nth-child(1),
+    .feature-card-mini:nth-child(2) {
+        grid-row: 1;
+    }
+    
+    /* Second row - cards 3 & 4 at bottom */
+    .feature-card-mini:nth-child(3),
+    .feature-card-mini:nth-child(4) {
+        grid-row: 3;
     }
     
     .feature-card-mini h4 {
@@ -2492,12 +2512,7 @@ img[src] {
     }
     
     .robot-image-logo {
-        bottom: var(--space-md);
-        right: var(--space-md);
-    }
-    
-    .robot-image-logo img {
-        height: 28px;
+        display: none; /* Hide logo on mobile to reduce clutter */
     }
     
     /* About company section mobile */
