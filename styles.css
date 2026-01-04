@@ -100,7 +100,7 @@ ul {
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--color-accent);
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm); /* Consistent spacing like "Om os" section */
 }
 
 .section-title {
@@ -970,10 +970,6 @@ ul {
     grid-template-columns: 1.2fr 1fr;
     gap: var(--space-2xl);
     align-items: start;
-}
-
-.about-intro .section-label {
-    margin-bottom: var(--space-xs);
 }
 
 .about-intro .section-title {
