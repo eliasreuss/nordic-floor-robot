@@ -1035,11 +1035,11 @@ ul {
     
     .robot-hero-text {
         padding: var(--space-2xl) var(--space-lg);
-        order: 2;
+        order: 1; /* keep text above image */
     }
     
     .robot-hero-image {
-        order: 1;
+        order: 2;
         min-height: 70vh;
     }
 }
