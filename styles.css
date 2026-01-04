@@ -791,6 +791,10 @@ ul {
 
 /* Responsive */
 @media (max-width: 1180px) {
+    :root {
+        --container-padding: 1.75rem;
+    }
+    
     .testprogram-row {
         grid-template-columns: 1fr;
         min-height: auto;
@@ -826,6 +830,31 @@ ul {
     
     .testprogram-timeline {
         margin-bottom: var(--space-lg);
+    }
+    
+    /* Robot section - soften layout on smaller desktops */
+    .robot-hero-row {
+        grid-template-columns: 1fr 1.1fr;
+        min-height: auto;
+    }
+    
+    .robot-hero-text {
+        padding: var(--space-2xl) var(--space-xl);
+        padding-left: var(--space-2xl);
+    }
+    
+    .robot-hero-image {
+        min-height: 60vh;
+    }
+    
+    /* Reduce huge hero title on smaller desktops */
+    .hero-title {
+        font-size: clamp(3.5rem, 7vw, 6rem);
+    }
+    
+    /* About layout tighter */
+    .about-layout {
+        gap: var(--space-xl);
     }
 }
 
