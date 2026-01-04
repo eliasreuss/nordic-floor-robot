@@ -993,16 +993,6 @@ ul {
     line-height: 1.5;
 }
 
-/* Force 2x2 layout on medium-large screens (e.g., MacBook Air full width) */
-@media (max-width: 1800px) {
-    .feature-overlay {
-        grid-template-columns: repeat(2, minmax(260px, 1fr));
-        gap: var(--space-md);
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-}
-
 @media (max-width: 1400px) {
     .feature-overlay {
         grid-template-columns: repeat(2, 1fr);
@@ -1022,8 +1012,8 @@ ul {
     }
 }
 
-/* Stack text above image + cards on mid/small desktop (≤1440) */
-@media (max-width: 1440px) {
+/* Stack text above image + cards on laptops (≤1700) so MacBook Air is two rows */
+@media (max-width: 1700px) {
     .robot-hero-row {
         grid-template-columns: 1fr;
         min-height: auto;
