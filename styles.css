@@ -837,7 +837,7 @@ ul {
     font-weight: 600;
     color: var(--color-text);
     line-height: 1.1;
-    margin: var(--space-sm) 0 var(--space-md);
+    margin: 0 0 var(--space-md); /* Align spacing with other sections */
     letter-spacing: -0.02em;
     max-width: 400px;
 }
